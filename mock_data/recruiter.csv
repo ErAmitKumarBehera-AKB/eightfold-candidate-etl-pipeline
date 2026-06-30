@@ -1,0 +1,5 @@
+name,email,phone,current_company,title,location,skills
+John Doe,john.doe@example.com,555-0100,TechCorp,Senior Engineer,San Francisco,Python
+Jane Smith,janesmith@gmail.com,(555) 0199,DataInc,Data Scientist,New York,"Python,SQL,Tableau"
+Alex Jones,alexj@test.com,555-0200,,Software Developer,,Java
+Amit Kumar Behera,amit.behera2428@gmail.com,+91 9124286319,SOA University,ML Engineer Intern,Bhubaneswar,"Python,PyTorch,React.js"

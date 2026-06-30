@@ -1,0 +1,119 @@
+[
+  {
+    "id": "cand_123",
+    "fullName": "John Doe",
+    "headline": "Senior Software Engineer | Python & JavaScript",
+    "contact": {
+      "primaryEmail": "john.doe@example.com",
+      "mobilePhone": "+1-555-0100"
+    },
+    "location": {
+      "city": "San Francisco",
+      "region": "CA",
+      "country": "United States"
+    },
+    "links": {
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "github": "https://github.com/johndoe"
+    },
+    "experience": [
+      {
+        "employer": "TechCorp",
+        "jobTitle": "Sr. Software Engineer",
+        "startDate": "2018-05-01",
+        "endDate": null,
+        "summary": "Led backend API development and mentored junior engineers."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Stanford University",
+        "degree": "B.S.",
+        "field": "Computer Science",
+        "endYear": 2018
+      }
+    ],
+    "tags": ["Python", "JavaScript", "SQL"]
+  },
+  {
+    "id": "cand_124",
+    "fullName": "Alex Jones",
+    "contact": {
+      "primaryEmail": "alex.jones@yahoo.com"
+    },
+    "location": {
+      "city": "New York",
+      "country": "US"
+    },
+    "experience": [],
+    "education": [
+      {
+        "institution": "NYU",
+        "degree": "M.S.",
+        "field": "Computer Science",
+        "endYear": 2022
+      }
+    ],
+    "tags": ["Java", "Spring Boot"]
+  },
+  {
+    "id": "cand_125",
+    "fullName": "Amit Kumar Behera",
+    "headline": "ML & AI Engineer | Python, PyTorch, Computer Vision",
+    "contact": {
+      "primaryEmail": "amit.behera2428@gmail.com",
+      "mobilePhone": "+91 9124286319"
+    },
+    "location": {
+      "city": "Bhubaneswar",
+      "region": "Odisha",
+      "country": "India"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/amit-kumar-behera-b11370293",
+      "github": "https://github.com/ErAmitKumarBehera-AKB"
+    },
+    "experience": [
+      {
+        "employer": "JPMC Code for Good 2025",
+        "jobTitle": "ML & Frontend Lead",
+        "startDate": "2025-06-01",
+        "endDate": "2025-06-02",
+        "summary": "Led ML and React frontend for Reaching Roots NGO dashboard at JPMC 24-hr hackathon."
+      },
+      {
+        "employer": "Hack For Green Bharat",
+        "jobTitle": "AI & Computer Vision Lead",
+        "startDate": "2026-02-01",
+        "endDate": "2026-02-28",
+        "summary": "EfficientNet-B4 + 3-model segmentation ensemble for satellite waste detection."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Siksha O Anusandhan University",
+        "degree": "B.Tech",
+        "field": "Computer Science and Engineering (Data Science)",
+        "endYear": 2027
+      }
+    ],
+    "tags": ["Python", "PyTorch", "TensorFlow", "React.js", "Docker", "SQL", "Machine Learning", "Computer Vision"],
+    "skills": [
+      {"name": "PyTorch", "confidence": 0.9},
+      {"name": "TensorFlow", "confidence": 0.85},
+      {"name": "Python", "confidence": 0.95},
+      {"name": "React.js", "confidence": 0.8},
+      {"name": "Flask", "confidence": 0.75},
+      {"name": "Docker", "confidence": 0.75},
+      {"name": "SQL", "confidence": 0.8}
+    ]
+  },
+  {
+    "id": "cand_malformed",
+    "fullName": null,
+    "contact": {},
+    "experience": "not-a-list",
+    "education": null,
+    "tags": []
+  }
+]

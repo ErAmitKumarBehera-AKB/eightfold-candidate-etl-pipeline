@@ -1,0 +1,30 @@
+[
+  {
+    "login": "johndoe",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "bio": "Senior Software Engineer building scalable systems.",
+    "location": "San Francisco, CA",
+    "html_url": "https://github.com/johndoe",
+    "repos": [
+      {"name": "awesome-python", "language": "Python"},
+      {"name": "react-app", "language": "JavaScript"},
+      {"name": "api-service", "language": "Python"},
+      {"name": "data-pipeline", "language": "Python"}
+    ]
+  },
+  {
+    "login": "ErAmitKumarBehera-AKB",
+    "name": "Amit Kumar Behera",
+    "email": "amit.behera2428@gmail.com",
+    "bio": "B.Tech CSE (Data Science) @ SOA University | ML & AI Engineer | PyTorch, Computer Vision, NLP",
+    "location": "Bhubaneswar, Odisha, India",
+    "html_url": "https://github.com/ErAmitKumarBehera-AKB",
+    "repos": [
+      {"name": "satellite-digital-twin", "language": "Python"},
+      {"name": "kfintech-nexus-portal", "language": "Python"},
+      {"name": "vle-dashboard", "language": "JavaScript"},
+      {"name": "candidate-data-transformer", "language": "Python"}
+    ]
+  }
+]

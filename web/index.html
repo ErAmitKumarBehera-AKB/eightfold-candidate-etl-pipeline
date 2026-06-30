@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate Data Transformer | Eightfold</title>
+    <meta name="description" content="Multi-source candidate data transformer — ingest, merge, normalize and project canonical candidate profiles in real-time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="brand">
+                <div class="brand-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="brand-title">Transformer Engine</h1>
+                    <p class="brand-sub">Multi-Source Candidate Data Resolution</p>
+                </div>
+            </div>
+            <div class="header-meta">
+                <div class="status-pill" id="serverStatus">
+                    <span class="status-dot"></span>
+                    <span>Live</span>
+                </div>
+                <div class="stats-strip">
+                    <span id="statCandidates" class="stat-item">— candidates</span>
+                    <span id="statSources" class="stat-item">3 sources</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="workspace">
+
+        <!-- Column 1: Raw Inputs -->
+        <section class="panel" id="panelInputs">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <span class="step-num">1</span>
+                    <h2>Raw Inputs</h2>
+                </div>
+                <div class="panel-badges" id="sourceBadges"></div>
+            </div>
+            <div class="tab-bar" id="inputTabs"></div>
+            <div class="code-box" id="inputViewer">
+                <pre><code id="inputContent" class="mono">Loading sources…</code></pre>
+            </div>
+        </section>
+
+        <!-- Column 2: Config Editor -->
+        <section class="panel" id="panelConfig">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <span class="step-num">2</span>
+                    <h2>Projection Config</h2>
+                </div>
+                <button id="resetConfigBtn" class="ghost-btn" title="Reset to default">↺ Reset</button>
+            </div>
+            <div class="config-hint">
+                Edit the JSON config — choose fields, set <code>on_missing</code>, toggle provenance.
+            </div>
+            <div class="code-box editable">
+                <textarea id="configEditor" class="mono" spellcheck="false"></textarea>
+            </div>
+            <div class="run-bar">
+                <button id="runBtn" class="run-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    Run Pipeline
+                </button>
+                <div class="run-meta" id="runMeta"></div>
+            </div>
+        </section>
+
+        <!-- Column 3: Output -->
+        <section class="panel" id="panelOutput">
+            <div class="panel-header">
+                <div class="panel-title">
+                    <span class="step-num">3</span>
+                    <h2>Canonical Output</h2>
+                </div>
+                <span class="output-badge" id="outputBadge">Ready</span>
+            </div>
+
+            <!-- Cards view (rendered profiles) -->
+            <div id="profileCards" class="profile-cards hidden"></div>
+
+            <!-- Raw JSON toggle -->
+            <div class="output-toggle">
+                <button class="toggle-btn active" id="btnCards" onclick="switchView('cards')">Cards</button>
+                <button class="toggle-btn" id="btnJson" onclick="switchView('json')">Raw JSON</button>
+                <button class="copy-btn" id="copyBtn" onclick="copyOutput()" title="Copy JSON">⧉ Copy</button>
+            </div>
+            <div class="code-box hidden" id="outputViewer">
+                <pre><code id="outputContent" class="mono">Click 'Run Pipeline' to see the canonical output.</code></pre>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

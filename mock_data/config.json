@@ -1,0 +1,39 @@
+{
+  "fields": [
+    {
+      "path": "full_name",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "primary_email",
+      "from": "emails[0]",
+      "type": "string",
+      "required": true
+    },
+    {
+      "path": "phone",
+      "from": "phones[0]",
+      "type": "string",
+      "normalize": "E164"
+    },
+    {
+      "path": "skills",
+      "from": "skills",
+      "type": "string[]",
+      "normalize": "canonical"
+    },
+    {
+      "path": "current_employer",
+      "from": "experience[0].company",
+      "type": "string"
+    },
+    {
+      "path": "location",
+      "from": "location.city",
+      "type": "string"
+    }
+  ],
+  "include_confidence": true,
+  "on_missing": "null"
+}
